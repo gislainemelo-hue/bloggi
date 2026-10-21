@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Gisa Melo Tattoo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #fdf8f8;
+    }
+
+    header {
+      background-color: #eca06c;
+      color: #0f0f0f;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    main {
+      background-color: #000000;
+      color: #fdf8f8;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Container Flexbox para colocar a imagem e o texto lado a lado */
+    .post-container {
+      display: flex;
+      align-items: flex-start; /* Alinha o topo da imagem com o topo do texto */
+      gap: 20px;               /* Espaço entre a imagem e o texto */
+    }
+
+    .post-container img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;      /* Evita que a imagem fique distorcida */
+      border-radius: 8px;     /* Opcional: cantos ligeiramente arredondados */
+      flex-shrink: 0;         /* Garante que a imagem mantenha o tamanho 80x80px */
+    }
+
+    .post-texto h2 {
+      margin-top: 0;
+    }
+
+    .post-texto p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gisa Melo Tattoo</h1>
+    <p>Vou compartilhar conhecimentos sobre Tatuagens</p>
+  </header>
+
+  <main>
+    <!-- Agrupamos a imagem e o conteúdo do post dentro da classe "post-container" -->
+    <div class="post-container">
+      <img src="bloggisa.png" alt="Ícone Gisa Melo Tattoo">
+      
+      <div class="post-texto">
+        <h2>Meu primeiro post</h2>
+        <p><strong>Por: Gisa Melo</strong></p>
+        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas e curiosidades da tatuagem.</p>
+        <p>A Hachura é uma técnica artística utilizada para criar efeitos de tons ou sombras a partir do desenho de linhas paralelas próximas. O conceito principal é o de que a quantidade, a espessura e o espaçamento entre as linhas irão afetar o sombreamento da imagem como um todo e enfatizar as formas, criando ilusão de volume, diferenças na textura e na cor. As linhas tracejadas devem sempre seguir o formato do objeto desenhado.</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
